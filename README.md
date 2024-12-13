@@ -1,65 +1,21 @@
-# reactradar README
+# ReactRadar
 
-This is the README for your extension "reactradar". After writing up a brief description, we recommend including the following sections.
+`ReactRadar` is a VS Code extension that scans React code for common issues, such as missing 'key' props in list rendering and incorrect hook usage. It helps developers ensure that their React code follows best practices and avoids common pitfalls.
 
 ## Features
+- Scan React files for missing 'key' props in `.map()` rendering
+- Detect incorrect usage of hooks outside functional components
+- Display results in a sidebar for easy review
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Installation
+1. Clone the repository or download the latest release.
+2. Open the project in VS Code.
+3. Press `F5` to run the extension in a new VS Code window.
 
-For example if there is an image subfolder under your extension project workspace:
+## Usage
+- Open a React file (`.jsx`, `.tsx`) in the editor.
+- Run the command `ReactRadar: Scan File` to analyze the code.
+- View the issues found in the "React Code Checker Results" sidebar.
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
