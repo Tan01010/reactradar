@@ -1,0 +1,49 @@
+{
+  "name": "reactradar",
+  "displayName": "ReactRadar",
+  "description": "Unleash the full potential of your React code with ReactRadar—your ultimate companion for clean, efficient, and bug-free components. This powerful VS Code extension scans your JSX and TSX files, highlighting potential pitfalls and offering best-practice recommendations. Whether you're a seasoned React developer or just getting started, ReactRadar ensures your projects stay performant, readable, and scalable. Transform your workflow with smarter linting and elevate your code quality today!",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "reactradar.scanFile",
+        "title": "Scan React File"
+      }
+    ]
+  },
+  "views": {
+    "explorer": [
+      {
+        "id": "reactCodeCheckerResults",
+        "name": "React Code Checker Results",
+        "type": "webview"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.6",
+    "@vscode/test-electron": "^2.3.4"
+  }
+}
