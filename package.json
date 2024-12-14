@@ -1,5 +1,6 @@
 {
   "name": "reactradar",
+  "author": "TannerOrdonez",
   "displayName": "ReactRadar",
   "description": "Unleash the full potential of your React code with ReactRadar—your ultimate companion for clean, efficient, and bug-free components. This powerful VS Code extension scans your JSX and TSX files, highlighting potential pitfalls and offering best-practice recommendations. Whether you're a seasoned React developer or just getting started, ReactRadar ensures your projects stay performant, readable, and scalable. Transform your workflow with smarter linting and elevate your code quality today!",
   "repository": {
